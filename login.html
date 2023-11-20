@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body>
+    <div style="margin-top: 20px">
+        <form method="post" action="login">
+            <input type="text" name="seuLogin" placeholder="Login" required>
+            <input type="password" name="suaSenha" placeholder="Senha" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div style="margin-top: 50px;display:flex">
+        <form method="get" action="/registrar">
+            <input type="submit" value="Registrar-se">
+        </form>
+        <form method="get" action="/mudarsenha">
+            <input style="margin-left:20px" type="submit" value="Mudar senha">
+        </form>
+        <form method="get" action="/mudarlogin">
+            <input style="margin-left:20px" type="submit" value="Mudar login">
+        </form>
+    </div>
+
+    <div style="margin-top: 40px">
+        <form action="/" method="post">
+            <input type="submit" value="Página inicial">
+        </form>    
+    </div>
+</body>
+
+</html>

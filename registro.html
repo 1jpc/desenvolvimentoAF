@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registrar-se</title>
+    </head>
+
+    <body>
+        <div style="display: flex">
+        <form method="post" action="registrar">
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+            <input type="text" name="seuLogin" placeholder="Login" required>
+            <input type="password" name="suaSenha" placeholder="Senha" required>
+            <input type="password" name="suaSenhaRepetida" placeholder="Repita sua senha" required>
+            <input style="margin-left: 20px" type="submit" name="criarConta" value="Registrar-se">
+        </form>
+        
+        </div>
+
+        <div style="margin-top: 50px;display:flex">
+            <form method="get" action="/login">
+                <input type="submit" value="Login">
+            </form>
+            <form method="get" action="/mudarsenha">
+                <input style="margin-left:20px" type="submit" value="Mudar senha">
+            </form>
+            <form method="get" action="/mudarlogin">
+                <input style="margin-left:20px" type="submit" value="Mudar login">
+            </form>
+        </div>
+
+        <div style="margin-top: 40px">
+            <form action="/" method="post">
+                <input type="submit" value="Página inicial">
+            </form>    
+        </div>
+
+    </body>
+</html>
