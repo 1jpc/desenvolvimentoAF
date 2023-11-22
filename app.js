@@ -88,6 +88,7 @@ app.post("/mudarLogin", (req, res) => {
     }
     if(suaSenha == usuario.senha){
         usuario.login = req.body.novoLogin
+        fs.writeFileSync('users.json', JSON.stringify(usr))
         res.sendFile(__dirname+'/index.html')
     }
 })
@@ -100,6 +101,7 @@ app.post("/mudarSenha", (req, res) => {
     }
     if(usuario.senha == req.body.suaSenha){
         usuario.senha = req.body.novaSenha
+        fs.writeFileSync('users.json', JSON.stringify(usr))
         res.sendFile(__dirname+'/index.html')
     }
 })
